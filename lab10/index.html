@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samuel Yoon | Animation</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        body {
+            background-image: url('dogpark.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        #animation-container {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 500px;
+        }
+
+        #translate-container {
+            position: absolute;
+            bottom: 0;
+            transition: transform 0.3s;
+        }
+
+        #dogjump {
+            width: 150px;
+            transition: transform 0.3s; /* Add a smooth transition effect */
+        }
+
+        #speech-bubble {
+            position: absolute;
+            bottom: 175px;
+            right: 30px;
+            padding: 10px;
+            background-color: white;
+            border: 2px solid #666;
+            border-radius: 25px;
+            transition: transform 0.3s; /* Add a smooth transition effect */
+        }
+
+        #speech-bubble:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -15px;
+            border-width: 15px;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+        }
+
+        #translate-container:hover {
+            transform: translate3d(1000px, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="animation-container">
+        <div id="translate-container" class="effect">
+            <div id="dogjump-container">
+                <img id="dogjump" src="dogjump.jpg" alt="Animated Dog">
+            </div>
+            <div id="speech-bubble">Bark Bark!! Woof Woof!</div>
+        </div>
+    </div>
+</body>
+</html>
