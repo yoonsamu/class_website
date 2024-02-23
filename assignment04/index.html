@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Samuel Yoon | Calendar</title>
+<style>
+	body {
+        font-family: Times New Roman, sans-serif;
+        background-color: #616D7E;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .calendar {
+        width: 1000px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        background-image: url('sept-background.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        padding: 60px 40px;
+    }
+    h1 {
+        font-size: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 40px;
+        height: 80px;
+        position: relative;
+    }
+    th {
+        height: 40px;
+        background-color: #E0FFFF;
+    }
+    .date-text {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .birthday {
+        font-weight: bold;
+        background-image: url('birthday.jpg');
+        background-size: cover;
+        color: #93FFE8;
+    }
+    .event1 {
+        background-image: url('laborday.jpg');
+        background-size: cover;
+        color: #93FFE8;
+    }
+    .event2 {
+        background-image: url('fallequinox.jpg');
+        background-size: cover;
+        color: #93FFE8;
+    }
+    .event-text {
+        color: #461B7E;
+        font-weight: bold;
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        right: 50px;
+        bottom: 25px;
+    }
+    .other-month {
+        background-color: #FCDFFF;
+    }
+</style>
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <h1>September 2023</h1>
+        </div>
+        <table>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            <tr>
+                <td class="other-month"><div class="date-text">27</div></td>
+                <td class="other-month"><div class="date-text">28</div></td>
+                <td class="other-month"><div class="date-text">29</div></td>
+                <td class="other-month"><div class="date-text">30</div></td>
+                <td class="other-month"><div class="date-text">31</div></td>
+                <td><div class="date-text">1</div></td>
+                <td><div class="date-text">2</div></td>
+            </tr>
+            <tr>
+                <td><div class="date-text">3</div></td>
+                <td class="event1"><div class="event-text">Labor Day</div><div class="date-text">4</div></td>
+                <td><div class="date-text">5</div></td>
+                <td><div class="date-text">6</div></td>
+                <td><div class="date-text">7</div></td>
+                <td><div class="date-text">8</div></td>
+                <td><div class="date-text">9</div></td>
+            </tr>
+            <tr>
+                <td><div class="date-text">10</div></td>
+                <td><div class="date-text">11</div></td>
+                <td><div class="date-text">12</div></td>
+                <td><div class="date-text">13</div></td>
+                <td><div class="date-text">14</div></td>
+                <td><div class="date-text">15</div></td>
+                <td><div class="date-text">16</div></td>
+            </tr>
+            <tr>
+                <td><div class="date-text">17</div></td>
+                <td><div class="date-text">18</div></td>
+                <td><div class="date-text">19</div></td>
+                <td><div class="date-text">20</div></td>
+                <td><div class="date-text">21</div></td>
+                <td class="event2"><div class="event-text">Fall Equinox</div><div class="date-text">22</div></td>
+                <td><div class="date-text">23</div></td>
+            </tr>
+            <tr>
+                <td><div class="date-text">24</div></td>
+                <td><div class="date-text">25</div></td>
+                <td><div class="date-text">26</div></td>
+                <td><div class="date-text">27</div></td>
+                <td><div class="date-text">28</div></td>
+                <td class="birthday"><div class="event-text">Dad's Birthday!</div><div class="date-text">29</div></td>
+                <td><div class="date-text">30</div></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

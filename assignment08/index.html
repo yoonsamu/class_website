@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>James' Favorite Video Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        body {
+            background-color: lavender;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        @font-face {
+            font-family: 'Minecraft';
+        }
+        @font-face {
+            font-family: 'Pokemon Solid';
+
+        }
+        .button1 {
+            display: block;
+            width: 600px; /* Fixed width */
+            height: 200px; /* Fixed height */
+            line-height: 200px; /* Aligns text vertically */
+            margin: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            font-size: 65px; /* Adjust font size as needed */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+            margin-bottom: 85px;
+            font-family: 'Minecraft', sans-serif;
+        }
+        .button2 {
+            display: block;
+            width: 600px; /* Fixed width */
+            height: 200px; /* Fixed height */
+            line-height: 200px; /* Aligns text vertically */
+            margin: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: #2E80F5;
+            color: white;
+            text-decoration: none;
+            font-size: 65px; /* Adjust font size as needed */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+            margin-bottom: 85px;
+            font-family: 'Times New Roman';
+
+        }
+        .button3 {
+            display: block;
+            width: 600px; /* Fixed width */
+            height: 200px; /* Fixed height */
+            line-height: 200px; /* Aligns text vertically */
+            margin: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: white;
+            text-decoration: none;
+            font-size: 65px; /* Adjust font size as needed */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 85px;
+            font-family: 'Pokemon Solid', sans-serif;
+        }
+        .title-section {
+            color: #2D3C51;
+            font-size: 40px;
+        }
+        .buttons-container {
+            text-align: center;
+            margin: auto;
+            width: fit-content;
+        }
+        .introduction {
+            font-family: fantasy;
+            font-size: 20px;
+            margin: 10px;
+        }
+        h1 {
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        form {
+            margin-top: 20px;
+            width: 400px; /* Reduces the width of the form */
+            margin: 0 auto; /* Centers the form */
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+            border-radius: 5px;
+            background-color: #f2f2f2;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-section">
+        <h1>James' Favorite Video Games</h1>
+    </div>
+    <div class="introduction">
+        <p>My brother James is eight years old and is the biggest fan of the Nintendo Switch. Every Christmas, I gift James a new video game for his Nintendo Switch. The first video game he received was Minecraft. The second game was his Pokemon Violet. The most recent game he received was Super Smash Bros. This informational page will include all the specific favorites about each video game!</p>
+    </div>
+
+    <div class="buttons-container">
+        <a href="minecraft.html" class="button1">Minecraft</a>
+        <a href="smashbros.html" class="button2">Super Smash Bros</a>
+        <a href="pokemonviolet.html" class="button3">Pokémon Violet</a>
+    </div>
+
+    <!-- Feedback Form -->
+    <form action="submit_feedback.php" method="post">
+        <h2>Feedback</h2>
+        <textarea name="feedback" placeholder="Your feedback"></textarea><br>
+        <input type="submit" value="Submit Feedback">
+    </form>
+
+    <!-- Contact Form -->
+    <form action="submit_contact.php" method="post">
+        <h2>Contact James!</h2>
+        <input type="text" name="name" placeholder="Your Name"><br>
+        <input type="email" name="email" placeholder="Your Email"><br>
+        <textarea name="message" placeholder="Your Message"></textarea><br>
+        <input type="submit" value="Send Message">
+    </form>
+
+</body>
+</html>

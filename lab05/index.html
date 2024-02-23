@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Samuel Yoon | HTML Form</title>
+<style>
+	body {
+		background-color: #728FCE;
+        margin: 0;
+        padding: 0;
+        font-family: Times New Roman, sans-serif;
+	}
+	.container {
+        width: 600px;
+        margin: 0 auto;
+        padding: 50px;
+        background-color: #E3E4FA;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+    	font-family: serif;
+    	font-size: 2.0em;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .checkbox-container {
+    	display: flex;
+        align-items: center;
+        
+    }
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<form action="confirmation.html">
+			<h1>Rides Form</h1>
+			<p></p>
+			<label for="text-id"><strong>Name:</strong></label>
+			<input type="text" id="text-id" placeholder="Your name">
+
+			<p></p>
+			<label><strong>Grade:</strong></label>
+			<label for="radio1"><input id="radio1" type="radio" name="radio-name" value="R1">Freshman</label>
+			<label for="radio2"><input id="radio2" type="radio" name="radio-name" value="R2">Sophomore</label>
+			<label for="radio3"><input id="radio3" type="radio" name="radio-name" value="R3">Junior</label>
+			<label for="radio4"><input id="radio4" type="radio" name="radio-name" value="R4">Senior</label>
+
+			<p></p>
+			<label><strong>Where to:</strong></label>
+			<label for="checkbox1"><input id="checkbox1" type="checkbox" name="cb1" value="C1">USC</label>
+			<label for="checkbox2"><input id="checkbox2" type="checkbox" name="cb2" value="C2">UCLA</label>
+			<label for="checkbox3"><input id="checkbox3" type="checkbox" name="cb3" value="C3">LAX</label>
+
+			<p></p>
+			<label for="dropdown-id"><strong>Times:</strong></label>
+			<select id="dropdown-id" name="dropdown">
+				<option value="O1">Early</option>
+				<option value="O2">Regular</option>
+			</select>
+			<p></p>
+
+		<div class="checkbox-container">
+			<p></p>
+			<input type="checkbox" id="terms" name="terms" value="accepted" required><label for="terms"><strong>I accept the Terms & Conditions</strong></label><br>
+		</div>
+
+			<p></p>
+			<label for="textarea-id"><strong>Additional Comments:</strong></label>
+			<textarea id="textarea-id" rows="4" cols="50" name="msg"></textarea>
+
+			<p></p>
+			<button type="submit">Submit</button>
+	        <button type="reset">Reset</button>
+	    </form>
+	</div>
+</body>
+</html>

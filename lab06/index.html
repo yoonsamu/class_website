@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Samuel Yoon | Photo Gallery</title>
+<style>
+    body {
+        background-color: #DBE9FA;
+        margin: 0;
+
+    }
+    #container {
+        text-align: center;
+    }
+    #header {
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        background-image: url('img/download.png');
+        background-position:center center;
+    }
+        
+    #gallery {margin:0 5%;}
+    
+    .thumbnail-container {
+        display: inline-block;
+        width: 175px;
+        text-align:center;
+        margin: 15px;
+    
+    }
+
+    .thumbnail {
+        background-color: lightgreen;
+        width: 175px; 
+        height: 175px;
+        border: 1px solid #000;
+        overflow: hidden;
+        border-radius: 50%;
+        opacity: .8;
+        display: inline-block;
+        
+    }
+    
+    .thumbnail:hover {
+        opacity:1;
+    }
+    
+    .thumbnail-container p {
+
+        visibility:hidden;
+        }
+    
+    .thumbnail-container:hover p {
+        
+        visibility:visible;
+        }
+    
+
+    .landscape {
+        width:auto;
+        height:100%;
+    }
+
+
+    .portrait {
+        width:100%;
+        height:auto;
+    }
+</style>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>A Film Collection</h1>
+    </div>
+
+    <div id="content">
+        <div id="gallery">
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img class="landscape" src="img/peanuts.jpeg" alt="museum">
+            </div>
+            <p>Retro Television</p>
+            </div>
+
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img class="landscape" src="img/beach.jpeg" alt="Monterey">
+            </div>
+            <p>Monterey Beach</p>
+            </div>
+
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img class="landscape" src="img/basketball.jpeg" alt="outdoor basketball">
+            </div>
+            <p>Outdoor Basketball</p>
+            </div>
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img class="landscape" src="img/art.jpeg" alt="artwork">
+            </div>
+            <p>Artwork</p>
+            </div>
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img class="landscape" src="img/mini.jpeg" alt="mini">
+            </div>
+            <p>Mini The Dog</p>
+            </div>
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img class="landscape" src="img/fireworks.jpeg" alt="fireworks">
+            </div>
+            <p>Fireworks</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

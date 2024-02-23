@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Samuel Yoon | Two-Column Movie</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background-color: #EE82EE;
+	}
+	img {
+		width: 200px;
+		height: auto;
+		margin: 10px;
+	}
+	#container {
+		width: 900px;
+		text-align: center;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	@font-face {
+		font-family: "Vogue";
+		src: url("fonts/Vogue.ttf");
+	}
+	.sidebar {
+		width: 200px;
+    	float: left;
+    	background-color: #FC6C85;
+    	padding: 10px;
+	}
+	.sidebar img {
+		width: 129.7px;
+		height: auto;
+		margin: 10px;
+	}
+	.content {
+		margin: 10px auto;
+		width: 850px;
+		padding: 25px;
+
+	}
+	.title {
+		font-size: 25px;
+		color: #342D7E;
+	}
+	.header {
+
+    	height: 225px;
+    	background-image: url('images.jpg');
+    	font-family: 'Montserrat', sans-serif;
+    	color: #FFDFDD;
+    	vertical-align: middle;
+    }
+
+	.header h3 {
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		font-family: serif;
+		font-size: 75px;
+
+	}
+	.header h2 {
+		font-family: 'Montserrat', sans-serif;
+
+	}
+	.content {
+		font-family: "Vogue", sans-serif;
+    	max-width: 1100px;
+    	margin: 0 auto;
+    	background-color: #f8f8f8;
+    	padding: 20px;
+    	
+	}
+	.section {
+		margin-bottom: 20px;
+	}
+	.float-left {
+    	float: left;
+    	margin-right: 20px;
+	}
+
+	.float-right {
+    	float: right;
+    	margin-left: 20px;
+	}
+
+	.footer {
+    	height: 50px;
+    	background-color: #333;
+    	color: #fff;
+    	text-align: center;
+    	clear: both;
+	}
+	.character-name {
+		display: none;
+		text-align: center;
+	}
+	.character-container:hover .character-name {
+		display: block;
+	}
+	#menubar {
+	    background-color: #230;
+		position: fixed;
+		top: 171px;
+		left: 0px;
+		right: 0px;
+		z-index:1;
+		text-align: center;
+	}
+	#nav ul {
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		display: inline-block;
+	}
+	
+	#nav li {
+		background-color: #333;
+		width: 180px;
+		text-align: center;
+		float:left;
+		line-height: 50px;
+		position: relative;
+	}
+	
+	#nav li:hover {
+		background-color: #F08080;
+	}
+	
+	#nav a {
+		display: block;
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+	#nav ul ul {
+		position: absolute;
+		top: 50px; 
+		left: 0px;
+		visibility: hidden;
+	}
+	
+	#nav li:hover > ul {
+		visibility: visible;
+	}
+	
+
+	#nav ul ul ul {
+		left: 180px; 
+		top: 0px;
+	}
+</style>
+</head>
+<body>
+	<header class="header">
+		<h3>LA LA LAND</h3>
+	</header>
+	<div id="menubar">
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Main Page</a>
+		        	<ul>
+		        		<li><a href="index.html#gotosummary">Summary</a></li>
+		        		<li><a href="index.html#gotopersonalreview">Personal Review</a></li>
+		        		<li><a href="index.html#gotomusic">Music</a></li>
+		        	</ul>
+		        </li>
+		    	<li><a href="gallery.html">Gallery Page</a></li>
+		    </ul>
+		</div>
+	</div>
+	<div id="container">
+		<div class="sidebar">
+			<div class="title">
+				<p><strong>The Cast</strong></p>
+			</div>
+			<div class="character-container">
+				<img src="images/emma.jpg" alt="Actress1">
+				<p>Emma Stone</p>
+				<p class="character-name"><em>Mia</em></p>
+			</div>
+			<div class="character-container">
+				<img src="images/ryan.jpg" alt="Actor2">
+				<p>Ryan Gosling</p>
+				<p class="character-name"><em>Sebastian Wilder</em></p>
+			</div>
+			<div class="character-container">
+				<img src="images/simmons.jpg" alt="Actor3">
+				<p>J.K. Simmons</p>
+				<p class="character-name"><em>Bill</em></p>
+			</div>
+			<div class="character-container">
+				<img src="images/john.jpg" alt="Actor4">
+				<p>John Legend</p>
+				<p class="character-name"><em>Keith</em></p>
+			</div>
+		</div>
+			<div class="content">
+				<section class="section">
+					<h2 id="gotosummary">Summary</h2>
+					<br>
+					<img src="LaLaLandImage1.jpg" alt="LaLaLandImage1" style="float:right">
+					<p>In Hollywood, Mia is an actress who dropped out of college and moved from small-town Nevada five years ago to pursue her dream. She is enamored with old-tome Hollywood - the movies she grew up on - but hates the cattle-herding feeling of going on auditions and her belief that she needs to schmooze at social events to get ahead in the business. Sebastian is a jazz pianist, his style of jazz in the vein of traditionalists Charlie Parker and Thelonious Monk. He wants to do his part to preserve that tradition, especially as he knows that that style of music is dying. He has trouble emotionally playing music he doesn't like just to get a paying gig. He dreams of opening his own jazz club.</p>
+					<p>Partly because of their individual struggles and partly because of the situations, their first few chance meetings are antagonistic. But they eventually become attracted to each other largely because of the passion for their dreams that they see in each other. But there are many obstacles to a happily-ever-after. They may be able to endure the struggling-artist life for so long before those struggles take their toll. The pursuit of their individual dreams may take all their energies with nothing left for their relationship. And any compromise each may make in getting ahead may change the person with whom each has fallen in love.</p>
+				</section>
+				<section class="section">
+					<h2 id="gotopersonalreview">Personal Review</h2>
+					<br>
+					<img src="LaLaLandMusic.jpg" alt="LaLaLandReview" style="float:left">
+					<p>When I get asked, what's your favorite movie? My immediate answer is always La La Land. This movie influenced so much of my love for music (specifically jazz) and for my idealistic view of what Los Angeles is. I don't believe this movie belongs in the genres of "greatest of all time" but rather, a personal pick, one that pulls on our heartstrings and enables a rewatchable story. The musical comedy romance with a twist ending was more than enough for me to watch, and then watch all over again. A movie that doesn't have the complexity of a Christopher Nolan film, so simple yet so lovable.</p>
+					<p>It was the genius of Justin Hurwitz and his musicality that captivated my ears, giving me more than enough "catchy" songs that could last me a playlist. The plot itself was a thing of beauty, capturing a passion and emotion unlike any other film. The way the film built the characters up and borrowed so much but still kept originality was genuine. The ending was a perfect conclusion to an amazing film.</p>
+				</section>
+				<section class="section">
+					<h2 id="gotomusic">Music</h2>
+					<br>
+					<img src="LaLaLandReview.jpg" alt="LaLaLandMusic" style="float:right">
+					<p>La La Land, in the end, is still a musical. The perfect balance between film and musical is recipe for the perfect entertainer. The director's own experience with "Whiplash" already showed the audience what he could do. The numbers in this song, incorporating the main theme of Sebastion's dream of Jazz, was special even as standalone songs. Ryan Gosling's dedication to learning the piano and even playing some of the complicated pieces in the film, was dedication level to actors like Christian Bale. Songs like "Another Day of Sun" that shut down an entire LA highway to be filmed, or aesthetic views of Los Angeles in "A Lonely Night" was not only exhilarating but still told a refreshing story.</p>
+				</section>
+			</div>
+	</div>
+	<footer class="footer">
+		Watch La La Land on Netflix, Prime Video and Apple TV!
+	</footer>
+</body>
+</html>

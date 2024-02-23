@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samuel Yoon | Gallery Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #EE82EE;
+        }
+        img.gallery-image {
+            width: auto;
+            max-width: 100%;
+            margin: 10px;
+        }
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+        .content {
+            margin: 10px auto;
+            width: 850px;
+            padding: 25px;
+        }
+        .title {
+            font-size: 25px;
+            color: #342D7E;
+        }
+        .header-gallery {
+            height: 150px;
+            background-image: url('gallery_header.jpg');
+            font-family: Times New Roman;
+            color: #FFDFDD;
+            vertical-align: middle;
+        }
+        .header-gallery h3 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        .header-gallery h2 {
+            font-family: serif;
+        }
+        .content {
+            font-family: serif;
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #CCFFFF;
+            padding: 20px;
+        }
+        .footer {
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            clear: both;
+        }
+        #menubar {
+        background-color: #230;
+        position: fixed;
+        top: 140px;
+        left: 0px;
+        right: 0px;
+        z-index:1;
+        text-align: center;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+        }
+        
+        #nav li {
+            background-color: #333;
+            width: 180px;
+            text-align: center;
+            float:left;
+            line-height: 50px;
+            position: relative;
+        }
+
+        #nav li:hover {
+            background-color: #F08080;
+        }
+
+        #nav a {
+            display: block;
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        #nav ul ul {
+            position: absolute;
+            top: 50px; 
+            left: 0px;
+            visibility: hidden;
+        }
+
+        #nav li:hover > ul {
+            visibility: visible;
+        }
+        #nav ul ul ul {
+            left: 180px; 
+            top: 0px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-image {
+            background-color: #CCC;
+            margin: 10px;
+            width: 220px;
+            height: 220px;
+            float: left;
+            overflow: hidden;       
+            position:relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery-image:hover .overlay {
+            display: flex;
+        }
+        .caption {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-gallery">
+        <h3>Gallery Page</h3>
+    </header>
+    <div id="menubar">
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Main Page</a>
+                    <ul>
+                        <li><a href="index.html#gotosummary">Summary</a></li>
+                        <li><a href="index.html#gotopersonalreview">Personal Review</a></li>
+                        <li><a href="index.html#gotomusic">Music</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery Page</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+        <div class="content">
+            <div class="gallery">
+                <div class="gallery-image">
+                    <img src="image1.jpg" alt="Image 1">
+                    <div class="overlay">
+                        <div class="caption">Mia and Seb playing Piano</div>
+                    </div>
+                </div>
+                <div class="gallery-image">
+                    <img src="image6.jpg" alt="Image 2">
+                    <div class="overlay">
+                        <div class="caption">Sebastian driving in LA traffic</div>
+                    </div>
+                </div>
+                <div class="gallery-image">
+                    <img src="image10.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <div class="caption">Mia thinking about the party</div>
+                    </div>
+                </div>
+                <div class="gallery-image">
+                    <img src="image4.jpg" alt="Image 4">
+                    <div class="overlay">
+                        <div class="caption">Mia and Sebastian watch a film</div>
+                    </div>
+                </div>
+                <div class="gallery-image">
+                    <img src="image5.jpg" alt="Image 5">
+                    <div class="overlay">
+                        <div class="caption">Mia and Sebastian listen to Jazz</div>
+                    </div>
+                </div>
+                <div class="gallery-image">
+                    <img src="image2.jpg" alt="Image 6">
+                    <div class="overlay">
+                        <div class="caption">Another Day of Sun</div>
+                    </div>
+                </div>
+                <div class="gallery-image">
+                    <img src="image7.jpg" alt="Image 7">
+                    <div class="overlay">
+                        <div class="caption">Mia and Sebastian fight</div>
+                    </div>
+                </div>
+                <div class="gallery-image">
+                    <img src="image8.jpg" alt="Image 8">
+                    <div class="overlay">
+                        <div class="caption">Mia and Sebastian (what could have been)</div>
+                    </div>
+                </div>
+                <div class="gallery-image">
+                    <img src="image9.jpg" alt="Image 9">
+                    <div class="overlay">
+                        <div class="caption">Mia and Sebastian at the Getty</div>
+                    </div>
+                </div>
+                <div class="gallery-image">
+                    <img src="image3.jpg" alt="Image 10">
+                    <div class="overlay">
+                        <div class="caption">Another Lonely Night</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        Watch La La Land on Netflix, Prime Video and Apple TV!
+    </footer>
+</body>
+</html>
+
+
+
+
+

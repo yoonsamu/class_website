@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samuel Yoon | Gallery Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #EE82EE;
+        }
+        img.gallery-image {
+            width: auto;
+            max-width: 100%;
+            margin: 10px;
+        }
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+        .content {
+            margin: 10px auto;
+            width: 850px;
+            padding: 25px;
+        }
+        .title {
+            font-size: 25px;
+            color: #342D7E;
+        }
+        .header-gallery {
+            height: 150px;
+            background-image: url('gallery_header.jpg');
+            font-family: Times New Roman;
+            color: #FFDFDD;
+            vertical-align: middle;
+        }
+        .header-gallery h3 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        .header-gallery h2 {
+            font-family: serif;
+        }
+        .content {
+            font-family: serif;
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #CCFFFF;
+            padding: 20px;
+        }
+        .footer {
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            clear: both;
+        }
+        .menu {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #9FE2BF;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            background-color: #F08080;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-image{
+            max-width: 80%;
+            margin: 1px;
+            flex: 2;
+            height: auto;
+            max-height: 175px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-gallery">
+        <h3>Gallery Page</h3>
+    </header>
+    <nav class="menu">
+        <a href="index.html">Main Page</a>
+        <a href="gallery.html">Gallery Page</a>
+    </nav>
+    <div id="container">
+        <div class="content">
+            <div class="gallery">
+                <img src="image1.jpg" alt="Image 1" class="gallery-image">
+                <img src="image6.jpg" alt="Image 2" class="gallery-image">
+                <img src="image10.jpg" alt="Image 3" class="gallery-image">
+                <img src="image4.jpg" alt="Image 4" class="gallery-image">
+                <img src="image5.jpg" alt="Image 5" class="gallery-image">
+                <img src="image2.jpg" alt="Image 6" class="gallery-image">
+                <img src="image7.jpg" alt="Image 7" class="gallery-image">
+                <img src="image8.jpg" alt="Image 8" class="gallery-image">
+                <img src="image9.jpg" alt="Image 9" class="gallery-image">
+                <img src="image3.jpg" alt="Image 10" class="gallery-image">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        Watch La La Land on Netflix, Prime Video and Apple TV!
+    </footer>
+</body>
+</html>
+
+
+
+
+
